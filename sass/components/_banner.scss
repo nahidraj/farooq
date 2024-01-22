@@ -1,0 +1,87 @@
+@import "../variable/variable";
+@import "../mixin/font";
+@import "../mixin/line-limit";
+
+.banner_area {
+  .banner_slider_item {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    padding-bottom: 140px;
+    padding-top: 200px;
+  }
+
+  .text {
+    text-align: left;
+
+    .title {
+      @include font(34px, 700);
+      color: $white;
+      padding: 0 40px;
+      padding-left: 0;
+      margin-bottom: 50px;
+      position: relative;
+      &::before{
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+        width: 80px;
+        height: 2px;
+        background-color: $secondary;
+        content: "";
+      }
+    }
+
+    p {
+      color: $white;
+      margin-bottom: 40px;
+      padding: 0 80px;
+      padding-left: 0;
+    }
+
+    .banner_btn {
+      background-color: transparent;
+      border: 2px solid $secondary;
+      color: $secondary;
+      font-size: 16px;
+      &:hover{
+        background-color: $secondary;
+        color: $white;
+      }
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: $white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+      background-color: $white;
+      color: $primary;
+    }
+  }
+
+  .icon.left {
+    left: 50px;
+  }
+
+  .icon.right {
+    right: 50px;
+  }
+}

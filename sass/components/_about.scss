@@ -1,0 +1,53 @@
+@import "../variable/variable";
+@import "../mixin/font";
+@import "../mixin/line-limit";
+
+.about_area {
+  padding-top: 80px;
+
+  .image {
+    img {
+      clip-path: polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%)
+    }
+  }
+
+  .text {
+    .title {
+      @include font(26px, 600);
+      margin-top: 30px;
+    }
+
+    p {
+      margin-top: 30px;
+    }
+  }
+
+  .quote {
+    margin-top: 60px;
+    background-color: $primary;
+    padding: 45px 60px;
+    text-align: right;
+    position: relative;
+
+    &::before {
+      width: 100%;
+      height: 167.2px;
+      background-color: $primary;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+    }
+
+    .title {
+      @include font(26px, 700);
+      color: $white;
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      @include font(15px, 500);
+      color: $white;
+    }
+  }
+}

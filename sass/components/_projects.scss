@@ -1,0 +1,43 @@
+@import "../variable/variable";
+@import "../mixin/font";
+@import "../mixin/line-limit";
+
+.projects_area {
+  padding-top: 80px;
+}
+
+.projects_item {
+  background-color: $white;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, .1);
+  height: 100%;
+
+  .image {
+    overflow: hidden;
+
+    img {
+      transition: $transition;
+    }
+  }
+
+  .text {
+    padding: 20px 20px;
+
+    .title {
+      @include font(20px, 700);
+      color: $black;
+      transition: $transition;
+    }
+  }
+
+  &:hover {
+    .image {
+      img {
+        transform: scale(1.1);
+      }
+    }
+
+    .title {
+      color: $primary;
+    }
+  }
+}

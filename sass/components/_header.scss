@@ -1,0 +1,211 @@
+@import "../variable/variable";
+@import "../mixin/font";
+@import "../mixin/line-limit";
+
+.header-top {
+  background-color: $primary;
+  padding: 8px 0;
+
+  .contact-info {
+    ul {
+      li {
+        display: inline-block;
+        position: relative;
+
+        a {
+          color: $white;
+          @include font(15px, 400);
+
+          i {
+            margin-right: 5px;
+          }
+        }
+
+        &::before {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: -24px;
+          width: 1px;
+          height: 18px;
+          background-color: rgb(255, 255, 255, 0.5);
+          content: "";
+        }
+
+        &:last-child {
+          &::before {
+            display: none;
+          }
+        }
+      }
+
+      li+li {
+        margin-left: 40px;
+      }
+    }
+  }
+
+  .social-icon {
+    ul {
+      li {
+        display: inline-block;
+        margin-left: 20px;
+
+        a {
+          color: $white;
+          font-size: 16px;
+
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.navbar {
+  padding: 0 !important;
+}
+
+.nav-link {
+  padding: 0 !important;
+}
+
+nav {
+  padding: 10px 0 !important;
+  background-color: $black;
+  position: relative;
+  z-index: 999;
+}
+
+.navbar-brand {
+  position: absolute;
+  top: 0px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -391%;
+    width: 591px;
+    height: 60px;
+    background-color: #2b6cac;
+    z-index: -1;
+    content: "";
+  }
+}
+
+.navbar-nav li {
+  margin-left: 35px;
+  position: relative;
+}
+
+.navbar-nav li a {
+  color: $white;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  line-height: 60px;
+}
+
+.navbar-nav li a i {
+  font-size: 12px;
+}
+
+.navbar-nav li:hover a {
+  color: $secondary;
+}
+
+.navbar-nav li a.active {
+  color: $secondary !important;
+}
+
+.navbar-nav li a.active::before {
+  opacity: 1;
+}
+
+.navbar-nav li:hover .sub-menu a {
+  color: $black;
+}
+
+.sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 230px;
+  background-color: $white;
+  box-shadow: 0px 10px 30px 0px rgba(137, 139, 142, 0.2);
+  padding: 18px 0;
+  transition: $transition;
+  visibility: hidden;
+  opacity: 0;
+  margin-top: 20px;
+}
+
+.sub-menu li {
+  margin: 0;
+}
+
+.sub-menu li+li {
+  margin-top: 12px;
+}
+
+.sub-menu li a {
+  color: $black;
+  line-height: 24px;
+  padding: 0 20px;
+  font-size: 15px;
+  width: 100%;
+}
+
+.sub-menu li a::before {
+  display: none;
+}
+
+.sub-menu li a:hover {
+  color: $secondary !important;
+}
+
+.navbar-nav .nav-item:hover>.sub-menu {
+  margin-top: 0;
+  visibility: visible;
+  opacity: 1;
+}
+
+.sticky-menu {
+  position: fixed;
+  left: 0;
+  margin: auto;
+  top: 0;
+  width: 100%;
+  background-color: $white;
+  animation: 700ms ease-in-out 0s normal none 1 running fadeInDown;
+  box-shadow: 0 2px 20px rgba(25, 25, 25, 0.1);
+  border-radius: 0;
+}
+
+.sticky-menu nav {
+  padding: 10px 0 !important;
+}
+
+.sticky-menu .header-top {
+  display: none;
+}
+
+.sticky-menu .menu-area {
+  margin-top: 0;
+  box-shadow: none;
+}
+
+.sticky-menu.menu-area {
+  padding: 0;
+}
+
+.sticky-menu nav li a::before {
+  top: -10px !important;
+}
+
+#header-fixed-height.active-height {
+  display: block;
+  height: 100px;
+}

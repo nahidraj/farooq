@@ -1,0 +1,66 @@
+@import "../variable/variable";
+@import "../mixin/font";
+@import "../mixin/line-limit";
+
+.practice_area {
+  padding-top: 80px;
+}
+
+.practice_item {
+  border: 1px solid $border;
+  border-radius: 5px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  transition: $transition;
+  height: 100%;
+
+  .image {
+    flex: 0 0 auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $primary;
+    margin-right: 30px;
+    transition: $transition;
+
+
+    i {
+      font-size: 30px;
+      color: $primary;
+      transition: $transition;
+
+    }
+  }
+
+  .text {
+    .title {
+      @include font(26px, 600);
+      color: $black;
+      transition: $transition;
+    }
+  }
+
+  &:hover {
+    background-color: $primary;
+    border-color: $primary;
+
+    .image {
+      border-color: $white;
+
+      i {
+        color: $white;
+      }
+    }
+
+    .text {
+      .title {
+        color: $white;
+      }
+    }
+  }
+
+}

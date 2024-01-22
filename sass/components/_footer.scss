@@ -1,0 +1,177 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.footer_area .footer-bg {
+  background-color: $black;
+  padding: 90px 0 30px 0;
+  margin-top: 80px;
+}
+
+.footer_area .footer-bg .footer-widget .logo {
+  margin-bottom: 30px;
+}
+
+.footer_area .footer-bg .footer-widget p {
+  color: $white;
+}
+
+.footer_area .footer-bg .footer-widget .social {
+  margin-top: 30px;
+}
+
+.footer_area .footer-bg .footer-widget .social ul li {
+  margin-right: 10px;
+}
+
+.footer_area .footer-bg .footer-widget .social ul li a {
+  background-color: $white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 34px;
+  font-size: 14px;
+  color: $black;
+}
+
+.footer_area .footer-bg .footer-widget .social ul li a:hover {
+  background-color: $primary;
+  color: $white;
+}
+
+.footer_area .footer-bg .footer-widget .footer-title {
+  color: $white;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.footer_area .footer-bg .footer-widget .services li {
+  margin-bottom: 12px;
+}
+
+.footer_area .footer-bg .footer-widget .services li a {
+  color: $white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer_area .footer-bg .footer-widget .services li a:hover {
+  color: $primary;
+}
+
+.footer_area .footer-bg .footer-widget .contact_us ul li+li {
+  margin-top: 20px;
+}
+
+.footer_area .footer-bg .footer-widget .contact_us ul li {
+  display: flex;
+  align-items: center;
+}
+
+.footer_area .footer-bg .footer-widget .contact_us ul li i {
+  width: 35px;
+  height: 35px;
+  border: 1px solid $primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  border-radius: 50px;
+  color: $white;
+  flex: 0 0 auto;
+  margin-right: 14px;
+}
+
+.footer_area .footer-bg .footer-widget .contact_us ul li a {
+  color: $white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer_area .footer-bg .footer-widget .contact_us ul li a:hover {
+  color: $primary;
+}
+
+.footer_area .footer-bg .footer-widget .contact_us ul li span {
+  color: $white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer_area .footer-bg .copyright {
+  padding-top: 30px;
+  margin-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.26)
+}
+
+.footer_area .footer-bg .copyright .copyright-text p {
+  color: $white;
+  font-weight: 500;
+}
+
+.footer_area .footer-bg .copyright .copyright-text a {
+  color: $white;
+  text-decoration: underline;
+}
+
+.footer_area .footer-bg .copyright .copyright-text a:hover {
+  color: $primary;
+}
+
+.footer_area .footer-bg .copyright .social a {
+  background-color: $white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 34px;
+  font-size: 14px;
+  color: $black;
+}
+
+.footer_area .footer-bg .copyright .social a:hover {
+  background-color: $primary;
+  color: $white;
+}
+
+/* scroll top part start */
+.scroll-to-top {
+  display: inline-block;
+  background-color: $primary;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: $white;
+  text-align: center;
+  border-radius: 5px;
+  border: 0;
+  position: fixed;
+  bottom: -60px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 18px;
+  z-index: 99;
+  cursor: pointer;
+  transition: $transition;
+}
+
+.scroll-to-top::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 1;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 80%);
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  bottom: 30px;
+}
