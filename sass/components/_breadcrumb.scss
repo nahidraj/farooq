@@ -1,0 +1,44 @@
+@import "../variable/variable";
+@import "../mixin/font";
+@import "../mixin/line-limit";
+
+.breadcrumb_area {
+  background-color: $primary;
+  padding: 70px 0;
+
+  .title {
+    @include font(40px, 900);
+    color: $white;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+
+    li {
+      margin: 0 20px;
+      @include font(16px, 400);
+      color: $white;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        top: 0;
+        right: -26px;
+        content: "/";
+      }
+
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+
+      a {
+        color: $white;
+        font-weight: 500;
+      }
+    }
+  }
+}

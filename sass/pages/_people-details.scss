@@ -1,0 +1,105 @@
+@import "../variable/variable";
+@import "../mixin/font";
+@import "../mixin/line-limit";
+
+.people_details {
+  padding-top: 80px;
+
+  .people_details_main {
+    display: flex;
+  }
+
+  .image {
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    flex: 0 0 auto;
+    margin-right: 45px;
+
+    .img {
+      border: 1px solid $primary;
+      max-width: 350px;
+      padding: 15px;
+      background-color: $white;
+    }
+
+    .info {
+      margin-top: 30px;
+      border: 1px solid $border;
+      padding: 24px;
+      max-width: 350px;
+
+      .contact_info {
+        li {
+          margin-bottom: 10px;
+
+          a {
+            @include font(16px, 400);
+            color: $black;
+            display: flex;
+            align-items: center;
+
+            i {
+              width: 33px;
+              height: 33px;
+              text-align: center;
+              background-color: $primary;
+              color: $white;
+              line-height: 35px;
+              align-items: center;
+              border-radius: 4px;
+              margin-right: 20px
+            }
+          }
+        }
+      }
+
+      .info_item {
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        .main_title {
+          @include font(34px, 700);
+          margin-bottom: 24px;
+          border-bottom: 1px solid $border;
+          padding-bottom: 14px
+        }
+        .subtitle {
+          @include font(16px, 500);
+          text-transform: uppercase;
+          margin-bottom: 8px;
+          color: $black;
+        }
+        .other_info{
+          margin-bottom: 24px;
+          li{
+            margin-bottom: 5px
+          }
+          a{
+            @include font(16px, 400);
+            color: $primary;
+            &:hover{
+              color: $black
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .text {
+    .title {
+      @include font(34px, 700);
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      @include font(26px, 700);
+      margin-bottom: 30px;
+    }
+
+    p+p {
+      margin-top: 24px;
+    }
+  }
+}

@@ -2,6 +2,27 @@
 @import "../mixin/font";
 @import "../mixin/line-limit";
 
-.founder_messages_area{
-  // padding-top: 80px;
+.founder_messages_area {
+  margin-top: 80px;
+  padding: 60px 0;
+  background-color: $bg;
+  margin-bottom: -80px;
+
+  .image{
+    border: 1px solid $primary;
+    padding: 14px;
+    background-color: $white;
+  }
+
+  .text {
+    .title {
+      @include font(30px, 700);
+      margin-bottom: 5px;
+    }
+
+    .subtitle {
+      @include font(26px, 700);
+      margin-bottom: 15px;
+    }
+  }
 }

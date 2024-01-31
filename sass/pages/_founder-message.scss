@@ -1,0 +1,21 @@
+@import "../variable/variable";
+@import "../mixin/font";
+@import "../mixin/line-limit";
+
+.area_2 {
+  margin-top: 0;
+
+  .founder_main {
+
+    .image {
+      float: left;
+      width: 290px;
+      margin-right: 30px;
+    }
+    .text{
+      p + p{
+        margin-top: 24px;
+      }
+    }
+  }
+}

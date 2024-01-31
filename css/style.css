@@ -100,13 +100,11 @@ button {
 }
 
 .section_title .main_title {
-  font-size: 24px;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 900;
   display: inline-block;
-  font-family: "Roboto", sans-serif;
+  font-family: "Belleza", sans-serif;
   color: #292930;
-  letter-spacing: 1px;
   position: relative;
   padding-left: 30px;
   padding-right: 30px;
@@ -290,7 +288,6 @@ nav {
   left: -391%;
   width: 591px;
   height: 60px;
-  background-color: #2b6cac;
   z-index: -1;
   content: "";
 }
@@ -607,6 +604,28 @@ nav {
   color: #2b6cac;
 }
 
+.founder_messages_area {
+  margin-top: 80px;
+  padding: 60px 0;
+  background-color: #f2f2f2;
+  margin-bottom: -80px;
+}
+.founder_messages_area .image {
+  border: 1px solid #2b6cac;
+  padding: 14px;
+  background-color: #ffffff;
+}
+.founder_messages_area .text .title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.founder_messages_area .text .subtitle {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
 .footer_area .footer-bg {
   background-color: #292930;
   padding: 90px 0 30px 0;
@@ -780,6 +799,318 @@ nav {
   opacity: 1;
   visibility: visible;
   bottom: 30px;
+}
+
+.breadcrumb_area {
+  background-color: #2b6cac;
+  padding: 70px 0;
+}
+.breadcrumb_area .title {
+  font-size: 40px;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.breadcrumb_area ul {
+  display: flex;
+  justify-content: center;
+}
+.breadcrumb_area ul li {
+  margin: 0 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  position: relative;
+}
+.breadcrumb_area ul li::after {
+  position: absolute;
+  top: 0;
+  right: -26px;
+  content: "/";
+}
+.breadcrumb_area ul li:last-child::after {
+  display: none;
+}
+.breadcrumb_area ul li a {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.area_2 {
+  margin-top: 0;
+}
+.area_2 .founder_main .image {
+  float: left;
+  width: 290px;
+  margin-right: 30px;
+}
+.area_2 .founder_main .text p + p {
+  margin-top: 24px;
+}
+
+.people_area {
+  padding-top: 80px;
+}
+.people_area .top_filter_options .search {
+  margin-bottom: 32px;
+}
+.people_area .top_filter_options .search .input_groups {
+  position: relative;
+}
+.people_area .top_filter_options .search .input_groups input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  padding: 0 20px;
+  padding-right: 60px;
+  transition: all 0.3s ease-in-out;
+}
+.people_area .top_filter_options .search .input_groups input:focus {
+  border-color: #292930;
+}
+.people_area .top_filter_options .search .input_groups button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #2b6cac;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+}
+.people_area .top_filter_options .search_select .select_box .select_wrapper {
+  width: 100%;
+  height: 52px;
+  background-color: transparent;
+  border: 1px solid #2b6cac;
+  padding: 12px 20px;
+  text-align: left;
+  position: relative;
+}
+.people_area .top_filter_options .search_select .select_box .select_wrapper .title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #292930;
+}
+.people_area .top_filter_options .search_select .select_box .select_wrapper .title span {
+  margin-left: 8px;
+}
+.people_area .top_filter_options .search_select .select_box .select_wrapper .title .arrow {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+}
+.people_area .top_filter_options .search_select .select_box .select_wrapper:hover {
+  background-color: #2b6cac;
+}
+.people_area .top_filter_options .search_select .select_box .select_wrapper:hover .title {
+  color: #ffffff;
+}
+.people_area .top_filter_options .search_select .select_box .select_wrapper.show {
+  background-color: #2b6cac;
+}
+.people_area .top_filter_options .search_select .select_box .select_wrapper.show .title {
+  color: #ffffff;
+}
+.people_area .top_filter_options .search_select .select_box .select_wrapper.show .arrow {
+  transform: rotate(180deg);
+  top: 15px;
+}
+.people_area .top_filter_options .search_select .select_box .dropdown-toggle::after {
+  display: none;
+}
+.people_area .top_filter_options .search_select .select_box .select_checkboxes {
+  width: 100%;
+  max-height: 400px;
+  background-color: #2b6cac;
+  border-radius: 0;
+  padding: 20px;
+  overflow-y: auto;
+}
+.people_area .top_filter_options .search_select .select_box .select_checkboxes input {
+  box-shadow: none !important;
+  border-radius: 0;
+  border: 1px solid transparent;
+}
+.people_area .top_filter_options .search_select .select_box .select_checkboxes input:checked {
+  border-color: #ffffff;
+}
+.people_area .top_filter_options .search_select .select_box .select_checkboxes label {
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.people_area .top_filter_options .filter_by {
+  margin-top: 30px;
+  display: flex;
+}
+.people_area .top_filter_options .filter_by .title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 24px;
+  flex: 0 0 auto;
+}
+.people_area .top_filter_options .filter_by .letter ul li {
+  display: inline-block;
+  margin-right: 4px;
+}
+.people_area .top_filter_options .filter_by .letter ul li button {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid #ccc;
+  width: 30px;
+  height: 28px;
+}
+.people_area .top_filter_options .filter_by .letter ul li button:hover {
+  background-color: #292930;
+  color: #ffffff;
+  border-color: #292930;
+}
+.people_area .top_filter_options .people_main {
+  margin-top: 40px;
+}
+.people_area .top_filter_options .people_main .clear_filter {
+  background-color: rgb(207, 0, 0);
+  border: 0;
+  font-size: 13px;
+  font-weight: 500;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 3px 8px;
+  margin-bottom: 24px;
+}
+.people_area .top_filter_options .people_main .clear_filter i {
+  margin-left: 5px;
+}
+.people_area .top_filter_options .people_main .people_item {
+  background-color: #f2f2f2;
+  transition: all 0.3s ease-in-out;
+}
+.people_area .top_filter_options .people_main .people_item:hover {
+  transform: scale(1.02);
+}
+.people_area .top_filter_options .people_main .people_item .text {
+  height: 100%;
+  padding: 24px;
+}
+.people_area .top_filter_options .people_main .people_item .text .title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #292930;
+  margin-bottom: 5px;
+}
+.people_area .top_filter_options .people_main .people_item .text .subtitle {
+  font-size: 15px;
+  font-weight: 400;
+  color: #292930;
+  margin-bottom: 10px;
+}
+.people_area .top_filter_options .people_main .people_item .text .common_btn {
+  padding: 10px 23px;
+  font-size: 12px;
+  font-weight: 700;
+  background: #292930 !important;
+}
+.people_area .top_filter_options .people_main .people_item .text .common_btn::before {
+  background-color: #292930;
+}
+
+.people_details {
+  padding-top: 80px;
+}
+.people_details .people_details_main {
+  display: flex;
+}
+.people_details .image {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  flex: 0 0 auto;
+  margin-right: 45px;
+}
+.people_details .image .img {
+  border: 1px solid #2b6cac;
+  max-width: 350px;
+  padding: 15px;
+  background-color: #ffffff;
+}
+.people_details .image .info {
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  padding: 24px;
+  max-width: 350px;
+}
+.people_details .image .info .contact_info li {
+  margin-bottom: 10px;
+}
+.people_details .image .info .contact_info li a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #292930;
+  display: flex;
+  align-items: center;
+}
+.people_details .image .info .contact_info li a i {
+  width: 33px;
+  height: 33px;
+  text-align: center;
+  background-color: #2b6cac;
+  color: #ffffff;
+  line-height: 35px;
+  align-items: center;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+.people_details .image .info .info_item {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.people_details .image .info .info_item .main_title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 14px;
+}
+.people_details .image .info .info_item .subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: #292930;
+}
+.people_details .image .info .info_item .other_info {
+  margin-bottom: 24px;
+}
+.people_details .image .info .info_item .other_info li {
+  margin-bottom: 5px;
+}
+.people_details .image .info .info_item .other_info a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2b6cac;
+}
+.people_details .image .info .info_item .other_info a:hover {
+  color: #292930;
+}
+.people_details .text .title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.people_details .text .subtitle {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.people_details .text p + p {
+  margin-top: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */
