@@ -1,0 +1,55 @@
+@import "../variable/variable";
+@import "../mixin/font";
+@import "../mixin/line-limit";
+
+.project_details_area {
+  padding-top: 80px;
+
+  .pr_details {
+    margin-bottom: 30px;
+    padding: 30px;
+    background-color: $bg;
+
+    p+p {
+      margin-top: 24px;
+    }
+  }
+
+  .pr_block {
+    .pr_block_item {
+      table {
+        th {
+          @include font(15px, 500);
+        }
+
+        td {
+          @include font(15px, 400);
+        }
+      }
+    }
+  }
+
+  .pr_pagination {
+    margin-top: 30px;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      background-color: $primary;
+      padding: 20px 20px;
+
+      li {
+        margin: 0 15px;
+        a {
+          @include font(16px, 500);
+          color: $white;
+          text-decoration: underline;
+          i{
+            font-size: 13px;
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+  }
+}

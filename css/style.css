@@ -1113,4 +1113,185 @@ nav {
   margin-top: 24px;
 }
 
+.contact_area {
+  padding: 80px 0 0 0;
+}
+
+.contact_area .contact_top_info {
+  border: 1px solid rgba(14, 5, 2, 0.1);
+  border-radius: 10px;
+  padding: 40px 40px;
+}
+
+.contact_area .contact_top_info .contact_top_info_item .icon {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 20px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b6cac;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.contact_area .contact_top_info .contact_top_info_item .text .title {
+  font-size: 26px;
+  font-weight: 500;
+  color: #292930;
+  margin-bottom: 20px;
+}
+
+.contact_area .contact_top_info .contact_top_info_item .text ul li {
+  color: #777777;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contact_area .contact_top_info .contact_top_info_item .text ul li a {
+  color: #777777;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.contact_area .contact_top_info .contact_top_info_item .text ul li a:hover {
+  color: #2b6cac;
+}
+
+.contact_area .contact_top_info .contact_label {
+  position: relative;
+}
+
+.contact_area .contact_top_info .contact_label::before {
+  position: absolute;
+  top: 50%;
+  right: 90px;
+  width: 1px;
+  height: 60%;
+  transform: translateY(-50%);
+  background-color: rgba(14, 5, 2, 0.1);
+  content: "";
+}
+
+.contact_area .contact_top_info .contact_label:last-child::before {
+  display: none;
+}
+
+.contact_area .contact_map_form {
+  padding-top: 80px;
+}
+
+.contact_area .contact_map_form .maps {
+  height: 632px;
+}
+
+.contact_area .contact_map_form .maps iframe {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+}
+
+.contact_area .contact_map_form .forms {
+  max-width: 635px;
+}
+
+.contact_area .contact_map_form .forms .info {
+  margin-bottom: 30px;
+}
+
+.contact_area .contact_map_form .forms .info .title {
+  font-size: 42px;
+  font-weight: 500;
+  color: #292930;
+  margin-bottom: 10px;
+}
+
+.contact_area .contact_map_form .forms label {
+  font-size: 15px;
+  font-weight: 500;
+  color: #292930;
+  margin-bottom: 4px;
+}
+
+.contact_area .contact_map_form .forms input,
+.contact_area .contact_map_form .forms textarea {
+  width: 100%;
+  height: 55px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 0 20px;
+  background-color: #f2f2f2;
+  transition: all 0.4s ease-out 0s;
+}
+
+.contact_area .contact_map_form .forms input:focus,
+.contact_area .contact_map_form .forms textarea:focus {
+  border-color: #292930;
+}
+
+.contact_area .contact_map_form .forms textarea {
+  height: 200px;
+  padding: 20px;
+}
+
+.contact_area .contact_map_form .forms .submit_btn {
+  background-color: #2b6cac;
+  font-size: 17px;
+  font-weight: 500;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 16px 25px;
+  width: 100%;
+  text-align: center;
+  border: 0;
+}
+
+.contact_area .contact_map_form .forms .submit_btn:hover {
+  background-color: #292930;
+}
+
+.project_details_area {
+  padding-top: 80px;
+}
+.project_details_area .pr_details {
+  margin-bottom: 30px;
+  padding: 30px;
+  background-color: #f2f2f2;
+}
+.project_details_area .pr_details p + p {
+  margin-top: 24px;
+}
+.project_details_area .pr_block .pr_block_item table th {
+  font-size: 15px;
+  font-weight: 500;
+}
+.project_details_area .pr_block .pr_block_item table td {
+  font-size: 15px;
+  font-weight: 400;
+}
+.project_details_area .pr_pagination {
+  margin-top: 30px;
+}
+.project_details_area .pr_pagination ul {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2b6cac;
+  padding: 20px 20px;
+}
+.project_details_area .pr_pagination ul li {
+  margin: 0 15px;
+}
+.project_details_area .pr_pagination ul li a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: underline;
+}
+.project_details_area .pr_pagination ul li a i {
+  font-size: 13px;
+  margin: 0 5px;
+}
+
 /*# sourceMappingURL=style.css.map */
