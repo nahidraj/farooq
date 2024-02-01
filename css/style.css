@@ -221,7 +221,7 @@ button {
 
 .header-top {
   background-color: #2b6cac;
-  padding: 8px 0;
+  padding: 4px 0;
 }
 .header-top .contact-info ul li {
   display: inline-block;
@@ -269,6 +269,38 @@ button {
 
 .nav-link {
   padding: 0 !important;
+}
+
+.header_search {
+  margin-left: 50px;
+}
+.header_search input {
+  width: 250px;
+  height: 36px;
+  padding: 0 15px;
+  border: 0;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+}
+.header_search input:focus {
+  border-color: #ffffff;
+}
+.header_search .search_bar {
+  background-color: transparent;
+  color: #ffffff;
+  border: 0;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+}
+.header_search .search_bar:hover {
+  background-color: #2b6cac;
+  color: #ffffff;
 }
 
 nav {

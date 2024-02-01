@@ -4,7 +4,7 @@
 
 .header-top {
   background-color: $primary;
-  padding: 8px 0;
+  padding: 4px 0;
 
   .contact-info {
     ul {
@@ -70,6 +70,41 @@
 
 .nav-link {
   padding: 0 !important;
+}
+
+.header_search {
+  margin-left: 50px;
+
+  input {
+    width: 250px;
+    height: 36px;
+    padding: 0 15px;
+    border: 0;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: $white;
+    font-size: 14px;
+    transition: $transition;
+    &:focus{
+      border-color: $white;
+    }
+  }
+
+  .search_bar {
+    background-color: transparent;
+    color: $white;
+    border: 0;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+
+    &:hover {
+      background-color: $primary;
+      color: $white;
+    }
+  }
 }
 
 nav {
