@@ -11,18 +11,37 @@ $(function () {
 
   // });
 
-  $(".banner_area").slick({
+
+  $('.slider').slick({
+    draggable: true,
+    arrows: true,
     dots: false,
-    infinite: true,
+    fade: true,
+    autoplay:true,
     speed: 800,
-    autoplaySpeed: 5000,
-    slidesToShow: 1,
-    fade: false,
-    autoplay: false,
-    slidesToScroll: 1,
+    autoplaySpeed:6000,
+    infinite: true,
+    cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
     prevArrow: '<i class="fas left icon fa-chevron-left"></i>',
     nextArrow: '<i class="fas right icon fa-chevron-right"></i>',
   }).slickAnimation();
+
+
+
+  // $(".banner_area").slick({
+  //   dots: false,
+  //   infinite: true,
+  //   speed: 800,
+  //   autoplaySpeed: 5000,
+  //   slidesToShow: 1,
+  //   fade: true,
+  //   autoplay: true,
+  //   slidesToScroll: 1,
+  //   cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
+  //   touchThreshold: 100,
+  //   prevArrow: '<i class="fas left icon fa-chevron-left"></i>',
+  //   nextArrow: '<i class="fas right icon fa-chevron-right"></i>',
+  // }).slickAnimation();
 
 
 

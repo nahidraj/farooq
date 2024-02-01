@@ -439,13 +439,37 @@ nav {
   height: 100px;
 }
 
-.banner_area .banner_slider_item {
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  background-position: center center !important;
+.slideshow {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+.slideshow .slider-track {
+  transition: all 1s cubic-bezier(0.7, 0, 0.3, 1);
+}
+.slideshow .item {
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.slideshow .item img {
+  width: 100%;
+  transition: all 8s cubic-bezier(0.7, 0, 0.3, 1);
+  transform: scale(1);
+}
+.slideshow .item.slick-active img {
+  transform: scale(1.5);
+}
+.slideshow .item .item_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   padding-bottom: 140px;
   padding-top: 200px;
 }
+
 .banner_area .text {
   text-align: left;
 }
